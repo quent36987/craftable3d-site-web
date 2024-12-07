@@ -1,0 +1,7 @@
+version: '3'
+services:
+  craftable3d-app:
+    image: ghcr.io/quent36987/craftable3d-site-web:latest
+    ports:
+      - "5698:8080"
+    container_name: craftable3d-app

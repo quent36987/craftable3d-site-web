@@ -1,0 +1,9 @@
+version: '3'
+services:
+  astro-app:
+    build:
+        context: .
+        dockerfile: Dockerfile
+    ports:
+      - "5698:8080"
+    container_name: astro-app
