@@ -30,7 +30,7 @@ export function Contact() {
               <Phone className="h-6 w-6 text-blue-600 mt-1" />
               <div>
                 <h3 className="text-lg font-semibold text-gray-900">Téléphone</h3>
-                <p className="text-gray-600">01 23 45 67 89</p>
+                <p className="text-gray-600">04.87.66.67.33</p>
               </div>
             </div>
 
@@ -38,7 +38,8 @@ export function Contact() {
               <MapPin className="h-6 w-6 text-blue-600 mt-1" />
               <div>
                 <h3 className="text-lg font-semibold text-gray-900">Adresse</h3>
-                <p className="text-gray-600">123 Rue de l'Innovation<br />75000 Paris</p>
+                <p className="text-gray-600">72 boulevard Alexandre de Fraissinette
+                  <br />42100 Saint-Étienne</p>
               </div>
             </div>
           </motion.div>
