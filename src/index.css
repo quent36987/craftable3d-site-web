@@ -17,6 +17,23 @@
   }
 }
 
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient 8s ease infinite;
+}
+
 .animate-blob {
   animation: blob 7s infinite;
 }
@@ -27,6 +44,23 @@
 
 .animation-delay-4000 {
   animation-delay: 4s;
+}
+
+/* Transformations 3D */
+.-skew-x-45 {
+  transform: skewX(-45deg);
+}
+
+.skew-x-45 {
+  transform: skewX(45deg);
+}
+
+.-skew-y-45 {
+  transform: skewY(-45deg);
+}
+
+.skew-y-45 {
+  transform: skewY(45deg);
 }
 
 /* Smooth scrolling */
@@ -76,4 +110,44 @@ html {
 .swiper-slide-shadow-left,
 .swiper-slide-shadow-right {
   background-image: linear-gradient(to left, rgba(59, 130, 246, 0.15), rgba(0, 0, 0, 0)) !important;
+}
+
+/* 3D Card effect */
+.card-3d {
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease;
+}
+
+.card-3d:hover {
+  transform: translateY(-10px) rotateX(5deg) rotateY(5deg);
+}
+
+/* Glassmorphism */
+.glass {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* Gradient text animation */
+.animate-gradient-text {
+  background-size: 200% auto;
+  animation: gradient 2s linear infinite;
+}
+
+/* Floating animation */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
 }

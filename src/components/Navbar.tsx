@@ -28,13 +28,11 @@ export function Navbar() {
                 className="flex items-center"
             >
               <Link to="/" className="flex items-center group">
-                <motion.div
-                    animate={{ rotate: 360 }}
-                    transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                >
-                  <Printer className="h-8 w-8 text-blue-600 group-hover:text-indigo-600 transition-colors" />
-                </motion.div>
-                <span className="ml-2 text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">
+                <img className="mx-auto text-blue-600"
+                     style={{height: "40px"}}
+                     src="/logo/logo.png"/>
+                <span
+                    className="ml-2 text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">
                 Craftable3D
               </span>
               </Link>
